@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipplers - Curated Cocktail Experiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Tipplers</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#discover" class="nav-link">Discover</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Curated Cocktail Experiences</h1>
+                <p class="hero-subtitle">Discover the city's most extraordinary bars, where craftsmanship meets culture and every sip tells a story.</p>
+                <button class="cta-button">Explore Now</button>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <div class="image-overlay">
+                        <span>Editorial cocktail photography</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-input-group">
+                    <input type="text" placeholder="Search bars, cocktails, or neighborhoods..." class="search-input">
+                    <button class="search-button">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="speakeasy">Speakeasy</button>
+                    <button class="filter-btn" data-filter="rooftop">Rooftop</button>
+                    <button class="filter-btn" data-filter="classic">Classic</button>
+                    <button class="filter-btn" data-filter="modern">Modern</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recommendations -->
+    <section id="discover" class="recommendations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Establishments</h2>
+                <p class="section-subtitle">Handpicked venues that define cocktail excellence</p>
+            </div>
+
+            <div class="bars-grid" id="barsGrid">
+                <!-- Bar Card 1 -->
+                <article class="bar-card" data-category="speakeasy">
+                    <div class="bar-image">
+                        <div class="image-placeholder">
+                            <span>Sophisticated bar interior</span>
+                        </div>
+                        <div class="bar-status available">Open</div>
+                    </div>
+                    <div class="bar-content">
+                        <div class="bar-header">
+                            <h3 class="bar-name">The Clandestine</h3>
+                            <div class="bar-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                        </div>
+                        <p class="bar-description">An intimate speakeasy hidden behind a vintage bookshelf, serving prohibition-era cocktails with contemporary precision.</p>
+                        <div class="bar-details">
+                            <span class="bar-type">Speakeasy</span>
+                            <span class="bar-location">Lower East Side</span>
+                        </div>
+                        <button class="bar-cta">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Bar Card 2 -->
+                <article class="bar-card" data-category="rooftop">
+                    <div class="bar-image">
+                        <div class="image-placeholder">
+                            <span>Rooftop skyline view</span>
+                        </div>
+                        <div class="bar-status busy">Busy</div>
+                    </div>
+                    <div class="bar-content">
+                        <div class="bar-header">
+                            <h3 class="bar-name">Skyline Social</h3>
+                            <div class="bar-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-number">4.6</span>
+                            </div>
+                        </div>
+                        <p class="bar-description">Panoramic city views complement innovative cocktails crafted with house-made bitters and seasonal botanicals.</p>
+                        <div class="bar-details">
+                            <span class="bar-type">Rooftop</span>
+                            <span class="bar-location">Midtown</span>
+                        </div>
+                        <button class="bar-cta">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Bar Card 3 -->
+                <article class="bar-card" data-category="classic">
+                    <div class="bar-image">
+                        <div class="image-placeholder">
+                            <span>Classic cocktail preparation</span>
+                        </div>
+                        <div class="bar-status available">Open</div>
+                    </div>
+                    <div class="bar-content">
+                        <div class="bar-header">
+                            <h3 class="bar-name">Heritage & Co.</h3>
+                            <div class="bar-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                        </div>
+                        <p class="bar-description">A timeless establishment honoring cocktail tradition with meticulous attention to classic recipes and presentation.</p>
+                        <div class="bar-details">
+                            <span class="bar-type">Classic</span>
+                            <span class="bar-location">Greenwich Village</span>
+                        </div>
+                        <button class="bar-cta">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Bar Card 4 -->
+                <article class="bar-card" data-category="modern">
+                    <div class="bar-image">
+                        <div class="image-placeholder">
+                            <span>Modern molecular cocktail</span>
+                        </div>
+                        <div class="bar-status available">Open</div>
+                    </div>
+                    <div class="bar-content">
+                        <div class="bar-header">
+                            <h3 class="bar-name">Laboratory NYC</h3>
+                            <div class="bar-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                        </div>
+                        <p class="bar-description">Experimental cocktails that push boundaries, featuring molecular gastronomy techniques and unexpected flavor combinations.</p>
+                        <div class="bar-details">
+                            <span class="bar-type">Modern</span>
+                            <span class="bar-location">SoHo</span>
+                        </div>
+                        <button class="bar-cta">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Bar Card 5 -->
+                <article class="bar-card" data-category="speakeasy">
+                    <div class="bar-image">
+                        <div class="image-placeholder">
+                            <span>Vintage bar atmosphere</span>
+                        </div>
+                        <div class="bar-status available">Open</div>
+                    </div>
+                    <div class="bar-content">
+                        <div class="bar-header">
+                            <h3 class="bar-name">The Velvet Room</h3>
+                            <div class="bar-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-number">4.5</span>
+                            </div>
+                        </div>
+                        <p class="bar-description">Luxurious speakeasy with velvet furnishings and gold accents, specializing in aged spirits and barrel-finished cocktails.</p>
+                        <div class="bar-details">
+                            <span class="bar-type">Speakeasy</span>
+                            <span class="bar-location">Upper East Side</span>
+                        </div>
+                        <button class="bar-cta">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Bar Card 6 -->
+                <article class="bar-card" data-category="rooftop">
+                    <div class="bar-image">
+                        <div class="image-placeholder">
+                            <span>Garden terrace setting</span>
+                        </div>
+                        <div class="bar-status available">Open</div>
+                    </div>
+                    <div class="bar-content">
+                        <div class="bar-header">
+                            <h3 class="bar-name">Garden Terrace</h3>
+                            <div class="bar-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-number">4.4</span>
+                            </div>
+                        </div>
+                        <p class="bar-description">An urban oasis featuring botanical cocktails made with fresh herbs grown on-site and artisanal small-batch spirits.</p>
+                        <div class="bar-details">
+                            <span class="bar-type">Rooftop</span>
+                            <span class="bar-location">Brooklyn Heights</span>
+                        </div>
+                        <button class="bar-cta">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Discover Nearby</h2>
+                <p class="section-subtitle">Find exceptional cocktail experiences in your area</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <svg width="48" height="48" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <h3>Interactive Map</h3>
+                        <p>Explore cocktail bars by location with detailed information and real-time availability.</p>
+                        <button class="map-cta">Enable Location</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tipplers</h3>
+                    <p class="footer-description">Curating extraordinary cocktail experiences for the discerning enthusiast.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#discover">Discover</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#speakeasy">Speakeasy</a></li>
+                        <li><a href="#rooftop">Rooftop</a></li>
+                        <li><a href="#classic">Classic</a></li>
+                        <li><a href="#modern">Modern</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Newsletter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tipplers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

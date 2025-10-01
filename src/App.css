@@ -1,3 +1,9 @@
+/* App.css — Component-Specific Styles (legacy)
+// A leftover stylesheet from Vite’s default template.
+// - Contains basic demo styles such as the spinning React logo animation.
+// - Most styles have been replaced by index.css, so this file is rarely used now.
+*/
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
