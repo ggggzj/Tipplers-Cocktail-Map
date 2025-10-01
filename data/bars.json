@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "bar-001",
+    "name": "Seven Grand",
+    "rating": 4.3,
+    "reviewCount": 892,
+    "priceLevel": 3,
+    "address": "515 W 7th St, Los Angeles, CA 90014",
+    "neighborhood": "Downtown/Arts District",
+    "lat": 34.0522,
+    "lng": -118.2581,
+    "phone": "(213) 614-0737",
+    "website": "https://sevengrandla.com",
+    "photos": ["/images/seven-grand-1.jpg", "/images/seven-grand-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "classic", "craft"],
+      "atmosphere": ["speakeasy", "quiet", "romantic"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "02:00"}],
+      "Tue": [{"open": "17:00", "close": "02:00"}],
+      "Wed": [{"open": "17:00", "close": "02:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "02:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu"],
+      "start": "17:00",
+      "end": "19:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-002",
+    "name": "Bestia",
+    "rating": 4.6,
+    "reviewCount": 1247,
+    "priceLevel": 4,
+    "address": "2121 E 7th Pl, Los Angeles, CA 90021",
+    "neighborhood": "Downtown/Arts District",
+    "lat": 34.0361,
+    "lng": -118.2297,
+    "phone": "(213) 514-5724",
+    "website": "https://bestiala.com",
+    "photos": ["/images/bestia-1.jpg", "/images/bestia-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "modern", "craft"],
+      "atmosphere": ["modern", "lively", "romantic"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [],
+      "Tue": [{"open": "17:30", "close": "23:00"}],
+      "Wed": [{"open": "17:30", "close": "23:00"}],
+      "Thu": [{"open": "17:30", "close": "23:00"}],
+      "Fri": [{"open": "17:30", "close": "00:00"}],
+      "Sat": [{"open": "17:30", "close": "00:00"}],
+      "Sun": [{"open": "17:30", "close": "22:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-003",
+    "name": "Lock & Key Social Drinkery",
+    "rating": 4.4,
+    "reviewCount": 634,
+    "priceLevel": 2,
+    "address": "239 S Vermont Ave, Los Angeles, CA 90004",
+    "neighborhood": "K-Town",
+    "lat": 34.0676,
+    "lng": -118.2917,
+    "phone": "(213) 483-1000",
+    "photos": ["/images/lock-key-1.jpg", "/images/lock-key-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic", "craft"],
+      "atmosphere": ["dive", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "02:00"}],
+      "Tue": [{"open": "17:00", "close": "02:00"}],
+      "Wed": [{"open": "17:00", "close": "02:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "02:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "start": "17:00",
+      "end": "19:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-004",
+    "name": "HMS Bounty",
+    "rating": 4.1,
+    "reviewCount": 1456,
+    "priceLevel": 1,
+    "address": "3357 Wilshire Blvd, Los Angeles, CA 90010",
+    "neighborhood": "K-Town",
+    "lat": 34.0617,
+    "lng": -118.3095,
+    "phone": "(213) 385-7275",
+    "photos": ["/images/hms-bounty-1.jpg", "/images/hms-bounty-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "rum", "classic"],
+      "atmosphere": ["dive", "quiet", "romantic"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "15:00", "close": "02:00"}],
+      "Tue": [{"open": "15:00", "close": "02:00"}],
+      "Wed": [{"open": "15:00", "close": "02:00"}],
+      "Thu": [{"open": "15:00", "close": "02:00"}],
+      "Fri": [{"open": "15:00", "close": "02:00"}],
+      "Sat": [{"open": "15:00", "close": "02:00"}],
+      "Sun": [{"open": "15:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-005",
+    "name": "Dresden Restaurant",
+    "rating": 4.2,
+    "reviewCount": 892,
+    "priceLevel": 2,
+    "address": "1760 N Vermont Ave, Los Angeles, CA 90027",
+    "neighborhood": "Los Feliz",
+    "lat": 34.1028,
+    "lng": -118.2917,
+    "phone": "(323) 665-4294",
+    "website": "https://dresdenroom.com",
+    "photos": ["/images/dresden-1.jpg", "/images/dresden-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "whiskey", "classic"],
+      "atmosphere": ["romantic", "quiet", "modern"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [],
+      "Tue": [{"open": "17:00", "close": "01:00"}],
+      "Wed": [{"open": "17:00", "close": "01:00"}],
+      "Thu": [{"open": "17:00", "close": "01:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-006",
+    "name": "Silverlake Lounge",
+    "rating": 4.0,
+    "reviewCount": 743,
+    "priceLevel": 1,
+    "address": "2906 Sunset Blvd, Los Angeles, CA 90026",
+    "neighborhood": "Silver Lake",
+    "lat": 34.0776,
+    "lng": -118.2756,
+    "phone": "(323) 663-9636",
+    "photos": ["/images/silverlake-lounge-1.jpg", "/images/silverlake-lounge-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "craft"],
+      "atmosphere": ["dive", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": false,
+      "outdoor": false,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "19:00", "close": "02:00"}],
+      "Tue": [{"open": "19:00", "close": "02:00"}],
+      "Wed": [{"open": "19:00", "close": "02:00"}],
+      "Thu": [{"open": "19:00", "close": "02:00"}],
+      "Fri": [{"open": "19:00", "close": "02:00"}],
+      "Sat": [{"open": "19:00", "close": "02:00"}],
+      "Sun": [{"open": "19:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-007",
+    "name": "The Short Stop",
+    "rating": 4.3,
+    "reviewCount": 567,
+    "priceLevel": 2,
+    "address": "1455 Sunset Blvd, Los Angeles, CA 90026",
+    "neighborhood": "Echo Park",
+    "lat": 34.0784,
+    "lng": -118.2611,
+    "phone": "(213) 482-4942",
+    "photos": ["/images/short-stop-1.jpg", "/images/short-stop-2.jpg"],
+    "tags": {
+      "cocktails": ["rum", "tequila", "mezcal", "craft"],
+      "atmosphere": ["dive", "lively", "outdoor"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "02:00"}],
+      "Tue": [{"open": "17:00", "close": "02:00"}],
+      "Wed": [{"open": "17:00", "close": "02:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "02:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu"],
+      "start": "17:00",
+      "end": "20:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-008",
+    "name": "Stories Bar",
+    "rating": 4.5,
+    "reviewCount": 423,
+    "priceLevel": 3,
+    "address": "1716 Sunset Blvd, Los Angeles, CA 90026",
+    "neighborhood": "Echo Park",
+    "lat": 34.0784,
+    "lng": -118.2567,
+    "phone": "(213) 413-4417",
+    "photos": ["/images/stories-bar-1.jpg", "/images/stories-bar-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "rum", "modern", "craft", "natural-wine"],
+      "atmosphere": ["modern", "quiet", "romantic"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [],
+      "Tue": [],
+      "Wed": [{"open": "18:00", "close": "01:00"}],
+      "Thu": [{"open": "18:00", "close": "01:00"}],
+      "Fri": [{"open": "18:00", "close": "02:00"}],
+      "Sat": [{"open": "18:00", "close": "02:00"}],
+      "Sun": [{"open": "18:00", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-009",
+    "name": "EP & LP",
+    "rating": 4.4,
+    "reviewCount": 1123,
+    "priceLevel": 4,
+    "address": "603 N La Cienega Blvd, West Hollywood, CA 90069",
+    "neighborhood": "West Hollywood",
+    "lat": 34.0847,
+    "lng": -118.3756,
+    "phone": "(310) 855-9955",
+    "website": "https://epandlp.com",
+    "photos": ["/images/ep-lp-1.jpg", "/images/ep-lp-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "rum", "modern", "craft"],
+      "atmosphere": ["rooftop", "modern", "lively", "outdoor"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:30", "close": "01:00"}],
+      "Tue": [{"open": "17:30", "close": "01:00"}],
+      "Wed": [{"open": "17:30", "close": "01:00"}],
+      "Thu": [{"open": "17:30", "close": "02:00"}],
+      "Fri": [{"open": "17:30", "close": "02:00"}],
+      "Sat": [{"open": "17:30", "close": "02:00"}],
+      "Sun": [{"open": "17:30", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-010",
+    "name": "Craig's",
+    "rating": 4.2,
+    "reviewCount": 897,
+    "priceLevel": 4,
+    "address": "8826 Melrose Ave, West Hollywood, CA 90069",
+    "neighborhood": "West Hollywood",
+    "lat": 34.0839,
+    "lng": -118.3914,
+    "phone": "(310) 276-1900",
+    "website": "https://craigs.la",
+    "photos": ["/images/craigs-1.jpg", "/images/craigs-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic", "craft"],
+      "atmosphere": ["romantic", "modern", "quiet"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:30", "close": "00:00"}],
+      "Tue": [{"open": "17:30", "close": "00:00"}],
+      "Wed": [{"open": "17:30", "close": "00:00"}],
+      "Thu": [{"open": "17:30", "close": "00:00"}],
+      "Fri": [{"open": "17:30", "close": "01:00"}],
+      "Sat": [{"open": "17:30", "close": "01:00"}],
+      "Sun": [{"open": "17:30", "close": "00:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-011",
+    "name": "The Bungalow",
+    "rating": 4.1,
+    "reviewCount": 1834,
+    "priceLevel": 3,
+    "address": "101 Wilshire Blvd, Santa Monica, CA 90401",
+    "neighborhood": "Santa Monica",
+    "lat": 34.0195,
+    "lng": -118.4968,
+    "phone": "(310) 393-7050",
+    "website": "https://thebungalowsm.com",
+    "photos": ["/images/bungalow-1.jpg", "/images/bungalow-2.jpg"],
+    "tags": {
+      "cocktails": ["rum", "tequila", "tiki", "modern"],
+      "atmosphere": ["outdoor", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "16:00", "close": "02:00"}],
+      "Tue": [{"open": "16:00", "close": "02:00"}],
+      "Wed": [{"open": "16:00", "close": "02:00"}],
+      "Thu": [{"open": "16:00", "close": "02:00"}],
+      "Fri": [{"open": "16:00", "close": "02:00"}],
+      "Sat": [{"open": "16:00", "close": "02:00"}],
+      "Sun": [{"open": "16:00", "close": "02:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "start": "16:00",
+      "end": "18:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-012",
+    "name": "Chez Jay",
+    "rating": 4.3,
+    "reviewCount": 1267,
+    "priceLevel": 2,
+    "address": "1657 Ocean Ave, Santa Monica, CA 90401",
+    "neighborhood": "Santa Monica",
+    "lat": 34.0175,
+    "lng": -118.4958,
+    "phone": "(310) 395-1741",
+    "photos": ["/images/chez-jay-1.jpg", "/images/chez-jay-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic"],
+      "atmosphere": ["dive", "romantic", "quiet"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "11:30", "close": "02:00"}],
+      "Tue": [{"open": "11:30", "close": "02:00"}],
+      "Wed": [{"open": "11:30", "close": "02:00"}],
+      "Thu": [{"open": "11:30", "close": "02:00"}],
+      "Fri": [{"open": "11:30", "close": "02:00"}],
+      "Sat": [{"open": "11:30", "close": "02:00"}],
+      "Sun": [{"open": "11:30", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-013",
+    "name": "The Townhouse & Del Monte Speakeasy",
+    "rating": 4.5,
+    "reviewCount": 634,
+    "priceLevel": 3,
+    "address": "52 Windward Ave, Venice, CA 90291",
+    "neighborhood": "Venice",
+    "lat": 33.9850,
+    "lng": -118.4695,
+    "phone": "(310) 392-4040",
+    "photos": ["/images/townhouse-1.jpg", "/images/townhouse-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic", "craft"],
+      "atmosphere": ["speakeasy", "romantic", "quiet"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "02:00"}],
+      "Tue": [{"open": "17:00", "close": "02:00"}],
+      "Wed": [{"open": "17:00", "close": "02:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-014",
+    "name": "Gjelina",
+    "rating": 4.4,
+    "reviewCount": 2156,
+    "priceLevel": 3,
+    "address": "1429 Abbot Kinney Blvd, Venice, CA 90291",
+    "neighborhood": "Venice",
+    "lat": 33.9929,
+    "lng": -118.4664,
+    "phone": "(310) 450-1429",
+    "website": "https://gjelina.com",
+    "photos": ["/images/gjelina-1.jpg", "/images/gjelina-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "natural-wine", "modern", "craft"],
+      "atmosphere": ["modern", "lively", "outdoor"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "23:00"}],
+      "Tue": [{"open": "17:00", "close": "23:00"}],
+      "Wed": [{"open": "17:00", "close": "23:00"}],
+      "Thu": [{"open": "17:00", "close": "23:00"}],
+      "Fri": [{"open": "17:00", "close": "00:00"}],
+      "Sat": [{"open": "17:00", "close": "00:00"}],
+      "Sun": [{"open": "17:00", "close": "23:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-015",
+    "name": "Culver City Hotel Bar",
+    "rating": 4.2,
+    "reviewCount": 445,
+    "priceLevel": 3,
+    "address": "9400 Culver Blvd, Culver City, CA 90232",
+    "neighborhood": "Culver City",
+    "lat": 34.0261,
+    "lng": -118.3967,
+    "phone": "(310) 558-1718",
+    "photos": ["/images/culver-hotel-1.jpg", "/images/culver-hotel-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic", "craft"],
+      "atmosphere": ["romantic", "quiet", "modern"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "16:00", "close": "00:00"}],
+      "Tue": [{"open": "16:00", "close": "00:00"}],
+      "Wed": [{"open": "16:00", "close": "00:00"}],
+      "Thu": [{"open": "16:00", "close": "00:00"}],
+      "Fri": [{"open": "16:00", "close": "01:00"}],
+      "Sat": [{"open": "16:00", "close": "01:00"}],
+      "Sun": [{"open": "16:00", "close": "00:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-016",
+    "name": "Bar Lubitsch",
+    "rating": 4.6,
+    "reviewCount": 678,
+    "priceLevel": 2,
+    "address": "7702 Santa Monica Blvd, West Hollywood, CA 90046",
+    "neighborhood": "West Hollywood",
+    "lat": 34.0904,
+    "lng": -118.3511,
+    "phone": "(323) 654-1234",
+    "photos": ["/images/bar-lubitsch-1.jpg", "/images/bar-lubitsch-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "whiskey", "classic", "craft"],
+      "atmosphere": ["romantic", "quiet", "speakeasy"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "18:00", "close": "02:00"}],
+      "Tue": [{"open": "18:00", "close": "02:00"}],
+      "Wed": [{"open": "18:00", "close": "02:00"}],
+      "Thu": [{"open": "18:00", "close": "02:00"}],
+      "Fri": [{"open": "18:00", "close": "02:00"}],
+      "Sat": [{"open": "18:00", "close": "02:00"}],
+      "Sun": [{"open": "18:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-017",
+    "name": "Good Times at Davey Wayne's",
+    "rating": 4.3,
+    "reviewCount": 1524,
+    "priceLevel": 3,
+    "address": "1611 N El Centro Ave, Hollywood, CA 90028",
+    "neighborhood": "Los Feliz",
+    "lat": 34.0975,
+    "lng": -118.3389,
+    "phone": "(323) 962-3804",
+    "photos": ["/images/davey-waynes-1.jpg", "/images/davey-waynes-2.jpg"],
+    "tags": {
+      "cocktails": ["tequila", "rum", "tiki", "modern"],
+      "atmosphere": ["speakeasy", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "19:00", "close": "02:00"}],
+      "Tue": [{"open": "19:00", "close": "02:00"}],
+      "Wed": [{"open": "19:00", "close": "02:00"}],
+      "Thu": [{"open": "19:00", "close": "02:00"}],
+      "Fri": [{"open": "19:00", "close": "02:00"}],
+      "Sat": [{"open": "19:00", "close": "02:00"}],
+      "Sun": [{"open": "19:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-018",
+    "name": "Tiki-Ti",
+    "rating": 4.7,
+    "reviewCount": 2134,
+    "priceLevel": 2,
+    "address": "4427 Sunset Blvd, Los Angeles, CA 90027",
+    "neighborhood": "Los Feliz",
+    "lat": 34.0924,
+    "lng": -118.2889,
+    "phone": "(323) 669-9381",
+    "photos": ["/images/tiki-ti-1.jpg", "/images/tiki-ti-2.jpg"],
+    "tags": {
+      "cocktails": ["rum", "tiki", "classic"],
+      "atmosphere": ["dive", "quiet", "romantic"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": false,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [],
+      "Tue": [],
+      "Wed": [{"open": "19:00", "close": "02:00"}],
+      "Thu": [{"open": "19:00", "close": "02:00"}],
+      "Fri": [{"open": "19:00", "close": "02:00"}],
+      "Sat": [{"open": "19:00", "close": "02:00"}],
+      "Sun": []
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-019",
+    "name": "Night + Market WeHo",
+    "rating": 4.4,
+    "reviewCount": 1876,
+    "priceLevel": 2,
+    "address": "9041 Sunset Blvd, West Hollywood, CA 90069",
+    "neighborhood": "West Hollywood",
+    "lat": 34.0901,
+    "lng": -118.3886,
+    "phone": "(310) 275-9724",
+    "website": "https://nightmarketthai.com",
+    "photos": ["/images/night-market-1.jpg", "/images/night-market-2.jpg"],
+    "tags": {
+      "cocktails": ["rum", "gin", "modern", "craft"],
+      "atmosphere": ["lively", "modern", "outdoor"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:30", "close": "01:00"}],
+      "Tue": [{"open": "17:30", "close": "01:00"}],
+      "Wed": [{"open": "17:30", "close": "01:00"}],
+      "Thu": [{"open": "17:30", "close": "01:00"}],
+      "Fri": [{"open": "17:30", "close": "02:00"}],
+      "Sat": [{"open": "17:30", "close": "02:00"}],
+      "Sun": [{"open": "17:30", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-020",
+    "name": "Sunset Beer Company",
+    "rating": 4.1,
+    "reviewCount": 892,
+    "priceLevel": 2,
+    "address": "1498 Sunset Blvd, Los Angeles, CA 90026",
+    "neighborhood": "Echo Park",
+    "lat": 34.0784,
+    "lng": -118.2618,
+    "phone": "(213) 481-2337",
+    "photos": ["/images/sunset-beer-1.jpg", "/images/sunset-beer-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "whiskey", "craft", "natural-wine"],
+      "atmosphere": ["modern", "lively", "outdoor"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "15:00", "close": "00:00"}],
+      "Tue": [{"open": "15:00", "close": "00:00"}],
+      "Wed": [{"open": "15:00", "close": "00:00"}],
+      "Thu": [{"open": "15:00", "close": "01:00"}],
+      "Fri": [{"open": "15:00", "close": "02:00"}],
+      "Sat": [{"open": "13:00", "close": "02:00"}],
+      "Sun": [{"open": "13:00", "close": "00:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "start": "15:00",
+      "end": "18:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-021",
+    "name": "Thirsty Crow",
+    "rating": 4.5,
+    "reviewCount": 1234,
+    "priceLevel": 2,
+    "address": "2939 Sunset Blvd, Los Angeles, CA 90026",
+    "neighborhood": "Silver Lake",
+    "lat": 34.0776,
+    "lng": -118.2745,
+    "phone": "(323) 661-6007",
+    "photos": ["/images/thirsty-crow-1.jpg", "/images/thirsty-crow-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "rum", "classic", "craft"],
+      "atmosphere": ["dive", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "02:00"}],
+      "Tue": [{"open": "17:00", "close": "02:00"}],
+      "Wed": [{"open": "17:00", "close": "02:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-022",
+    "name": "Akbar",
+    "rating": 4.2,
+    "reviewCount": 1567,
+    "priceLevel": 1,
+    "address": "4356 Sunset Blvd, Los Angeles, CA 90029",
+    "neighborhood": "Silver Lake",
+    "lat": 34.0924,
+    "lng": -118.2889,
+    "phone": "(323) 665-6810",
+    "photos": ["/images/akbar-1.jpg", "/images/akbar-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic"],
+      "atmosphere": ["dive", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": false,
+      "outdoor": true,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "20:00", "close": "02:00"}],
+      "Tue": [{"open": "20:00", "close": "02:00"}],
+      "Wed": [{"open": "20:00", "close": "02:00"}],
+      "Thu": [{"open": "20:00", "close": "02:00"}],
+      "Fri": [{"open": "20:00", "close": "02:00"}],
+      "Sat": [{"open": "20:00", "close": "02:00"}],
+      "Sun": [{"open": "20:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-023",
+    "name": "Death & Co Los Angeles",
+    "rating": 4.7,
+    "reviewCount": 876,
+    "priceLevel": 4,
+    "address": "124 S La Brea Ave, Los Angeles, CA 90036",
+    "neighborhood": "K-Town",
+    "lat": 34.0736,
+    "lng": -118.3445,
+    "phone": "(323) 666-6234",
+    "website": "https://deathandcompany.com",
+    "photos": ["/images/death-co-1.jpg", "/images/death-co-2.jpg"],
+    "tags": {
+      "cocktails": ["gin", "whiskey", "rum", "modern", "craft"],
+      "atmosphere": ["speakeasy", "romantic", "quiet"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "01:00"}],
+      "Tue": [{"open": "17:00", "close": "01:00"}],
+      "Wed": [{"open": "17:00", "close": "01:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-024",
+    "name": "Button Mash",
+    "rating": 4.3,
+    "reviewCount": 1789,
+    "priceLevel": 2,
+    "address": "1391 Sunset Blvd, Los Angeles, CA 90026",
+    "neighborhood": "Echo Park",
+    "lat": 34.0784,
+    "lng": -118.2628,
+    "phone": "(213) 250-9903",
+    "website": "https://buttonmashla.com",
+    "photos": ["/images/button-mash-1.jpg", "/images/button-mash-2.jpg"],
+    "tags": {
+      "cocktails": ["rum", "gin", "modern", "craft"],
+      "atmosphere": ["lively", "modern", "outdoor"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "01:00"}],
+      "Tue": [{"open": "17:00", "close": "01:00"}],
+      "Wed": [{"open": "17:00", "close": "01:00"}],
+      "Thu": [{"open": "17:00", "close": "01:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-025",
+    "name": "Casey's Irish Pub",
+    "rating": 4.0,
+    "reviewCount": 2341,
+    "priceLevel": 1,
+    "address": "613 S Grand Ave, Los Angeles, CA 90017",
+    "neighborhood": "Downtown/Arts District",
+    "lat": 34.0489,
+    "lng": -118.2547,
+    "phone": "(213) 629-2353",
+    "photos": ["/images/caseys-1.jpg", "/images/caseys-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "classic"],
+      "atmosphere": ["dive", "lively", "outdoor"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "11:00", "close": "02:00"}],
+      "Tue": [{"open": "11:00", "close": "02:00"}],
+      "Wed": [{"open": "11:00", "close": "02:00"}],
+      "Thu": [{"open": "11:00", "close": "02:00"}],
+      "Fri": [{"open": "11:00", "close": "02:00"}],
+      "Sat": [{"open": "11:00", "close": "02:00"}],
+      "Sun": [{"open": "11:00", "close": "02:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-026",
+    "name": "Venice Whaler",
+    "rating": 4.2,
+    "reviewCount": 1923,
+    "priceLevel": 2,
+    "address": "10 Washington Blvd, Venice, CA 90292",
+    "neighborhood": "Venice",
+    "lat": 33.9850,
+    "lng": -118.4695,
+    "phone": "(310) 821-8737",
+    "website": "https://venicewhaler.com",
+    "photos": ["/images/venice-whaler-1.jpg", "/images/venice-whaler-2.jpg"],
+    "tags": {
+      "cocktails": ["rum", "tequila", "tiki", "classic"],
+      "atmosphere": ["outdoor", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": true
+    },
+    "hours": {
+      "Mon": [{"open": "11:00", "close": "01:00"}],
+      "Tue": [{"open": "11:00", "close": "01:00"}],
+      "Wed": [{"open": "11:00", "close": "01:00"}],
+      "Thu": [{"open": "11:00", "close": "02:00"}],
+      "Fri": [{"open": "11:00", "close": "02:00"}],
+      "Sat": [{"open": "11:00", "close": "02:00"}],
+      "Sun": [{"open": "11:00", "close": "01:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "start": "15:00",
+      "end": "18:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-027",
+    "name": "Westside Tavern",
+    "rating": 4.3,
+    "reviewCount": 1456,
+    "priceLevel": 3,
+    "address": "10850 W Pico Blvd, Los Angeles, CA 90064",
+    "neighborhood": "Culver City",
+    "lat": 34.0392,
+    "lng": -118.4356,
+    "phone": "(310) 441-3100",
+    "photos": ["/images/westside-tavern-1.jpg", "/images/westside-tavern-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "craft", "natural-wine"],
+      "atmosphere": ["modern", "lively", "outdoor"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "16:00", "close": "00:00"}],
+      "Tue": [{"open": "16:00", "close": "00:00"}],
+      "Wed": [{"open": "16:00", "close": "00:00"}],
+      "Thu": [{"open": "16:00", "close": "01:00"}],
+      "Fri": [{"open": "16:00", "close": "02:00"}],
+      "Sat": [{"open": "11:00", "close": "02:00"}],
+      "Sun": [{"open": "11:00", "close": "00:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "start": "16:00",
+      "end": "18:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-028",
+    "name": "Salazar",
+    "rating": 4.4,
+    "reviewCount": 987,
+    "priceLevel": 3,
+    "address": "2490 Fletcher Dr, Los Angeles, CA 90039",
+    "neighborhood": "Silver Lake",
+    "lat": 34.1078,
+    "lng": -118.2417,
+    "phone": "(323) 344-7300",
+    "website": "https://salazarbar.com",
+    "photos": ["/images/salazar-1.jpg", "/images/salazar-2.jpg"],
+    "tags": {
+      "cocktails": ["mezcal", "tequila", "modern", "craft"],
+      "atmosphere": ["outdoor", "lively", "modern"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": true,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "00:00"}],
+      "Tue": [{"open": "17:00", "close": "00:00"}],
+      "Wed": [{"open": "17:00", "close": "00:00"}],
+      "Thu": [{"open": "17:00", "close": "01:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "00:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-029",
+    "name": "Dan Tana's",
+    "rating": 4.1,
+    "reviewCount": 1876,
+    "priceLevel": 4,
+    "address": "9071 Santa Monica Blvd, West Hollywood, CA 90069",
+    "neighborhood": "West Hollywood",
+    "lat": 34.0901,
+    "lng": -118.3889,
+    "phone": "(310) 275-9444",
+    "website": "https://dantanasrestaurant.com",
+    "photos": ["/images/dan-tanas-1.jpg", "/images/dan-tanas-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "gin", "classic"],
+      "atmosphere": ["romantic", "quiet", "modern"]
+    },
+    "amenities": {
+      "reservations": true,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "01:00"}],
+      "Tue": [{"open": "17:00", "close": "01:00"}],
+      "Wed": [{"open": "17:00", "close": "01:00"}],
+      "Thu": [{"open": "17:00", "close": "01:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "01:00"}]
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  },
+  {
+    "id": "bar-030",
+    "name": "Pearl's Liquor Bar",
+    "rating": 4.5,
+    "reviewCount": 723,
+    "priceLevel": 2,
+    "address": "3199 W 6th St, Los Angeles, CA 90020",
+    "neighborhood": "K-Town",
+    "lat": 34.0614,
+    "lng": -118.2956,
+    "phone": "(213) 739-7875",
+    "photos": ["/images/pearls-1.jpg", "/images/pearls-2.jpg"],
+    "tags": {
+      "cocktails": ["whiskey", "rum", "classic", "craft"],
+      "atmosphere": ["dive", "quiet", "romantic"]
+    },
+    "amenities": {
+      "reservations": false,
+      "food": true,
+      "outdoor": false,
+      "liveMusic": false
+    },
+    "hours": {
+      "Mon": [{"open": "17:00", "close": "02:00"}],
+      "Tue": [{"open": "17:00", "close": "02:00"}],
+      "Wed": [{"open": "17:00", "close": "02:00"}],
+      "Thu": [{"open": "17:00", "close": "02:00"}],
+      "Fri": [{"open": "17:00", "close": "02:00"}],
+      "Sat": [{"open": "17:00", "close": "02:00"}],
+      "Sun": [{"open": "17:00", "close": "02:00"}]
+    },
+    "happyHour": {
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "start": "17:00",
+      "end": "19:00"
+    },
+    "updatedAt": "2024-12-15T18:30:00Z"
+  }
+]
