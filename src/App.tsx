@@ -6,7 +6,8 @@
 //   "/bars/:id" → BarDetailPage (detailed info for a single bar).
 // - Applies global layout and theming across the app.
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import DiscoverPage from './pages/DiscoverPage';
 import BarDetailPage from './pages/BarDetailPage';
 
