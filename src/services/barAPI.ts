@@ -13,14 +13,28 @@ class MockBarAPI {
     if (this.initialized) return;
 
     try {
-      const response = await fetch('/data/bars.json');
+      //const response = await fetch('/data/bars.json');
+      
+      /*const response = await fetch(`${import.meta.env.BASE_URL}data/bars.json`);  // ✅ 改成这样
+      if (!response.ok) throw new Error('Failed to load bars data');
+      const bars = await response.json();
       if (!response.ok) {
         const error = new Error(`Failed to load bars data: ${response.statusText}`) as APIError;
         error.code = 'FETCH_ERROR';
         error.retryable = true;
         throw error;
-      }
-
+      }*/
+      const response = await fetch(`${import.meta.env.BASE_URL}data/bars.json`, {
+    headers: { 'Content-Type': 'application/json' },
+  });
+  if (!response.ok) {
+    const error = new Error(
+      `Failed to load bars data: ${response.status} ${response.statusText}`
+    ) as APIError;
+    error.code = 'FETCH_ERROR';
+    error.retryable = true;
+    throw error;
+  }
       const data = await response.json();
       this.bars = data;
       this.initialized = true;
