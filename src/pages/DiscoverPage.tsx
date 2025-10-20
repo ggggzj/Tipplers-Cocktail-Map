@@ -5,6 +5,7 @@ import { barAPI, withRetry, type APIError } from '../services/barAPI';
 import type { Bar } from '../types/bar';
 import { useAppStore } from '../store/AppStore';
 import { isOpenNow } from '../utils/hours';
+import MapView from '../components/MapView';
 
 interface Toast {
   id: string;
@@ -265,21 +266,17 @@ const DiscoverPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Side - Map Placeholder */}
+          {/* Right Side - Map */}
           <div className="lg:col-span-7">
             <div className="card-editorial overflow-hidden">
-              <div className="h-[600px] flex items-center justify-center bg-paper-warm">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-gold mx-auto mb-6" />
-                  <h3 className="text-2xl font-serif font-semibold text-ink mb-3">Map View</h3>
-                  <p className="text-ink-light text-lg">Interactive map with bar locations</p>
-                  {selectedBar && (
-                    <div className="mt-6 p-6 bg-gold/5 border-2 border-gold/20" style={{ borderRadius: '4px' }}>
-                      <p className="font-serif font-semibold text-lg text-ink">{selectedBar.name}</p>
-                      <p className="text-sm text-ink-light italic mt-1">{selectedBar.address}</p>
-                    </div>
-                  )}
-                </div>
+              <div className="h-[600px]">
+                <MapView
+                  bars={state.filteredBars}
+                  selectedBar={selectedBar}
+                  onBarSelect={setSelectedBar}
+                  center={selectedBar ? [selectedBar.lat, selectedBar.lng] : [34.0522, -118.2437]}
+                  zoom={selectedBar ? 14 : 11}
+                />
               </div>
             </div>
           </div>
