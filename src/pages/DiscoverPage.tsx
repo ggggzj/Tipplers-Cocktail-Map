@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Star, Search, Heart, Filter, AlertCircle, X } from 'lucide-react';
+import { MapPin, Star, Search, Heart, AlertCircle, X, Filter } from 'lucide-react';
 import { barAPI, withRetry, type APIError } from '../services/barAPI';
 import type { Bar } from '../types/bar';
 import { useAppStore } from '../store/AppStore';
 import { isOpenNow } from '../utils/hours';
 import MapView from '../components/MapView';
+import SearchAndFilter from '../components/SearchAndFilter';
+import type { FilterOptions } from '../types';
 
 interface Toast {
   id: string;
@@ -17,12 +19,12 @@ interface Toast {
 const DiscoverPage: React.FC = () => {
   const { state, dispatch } = useAppStore();
   const [loading, setLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState('');
   const [selectedBar, setSelectedBar] = useState<Bar | null>(null);
   const [toasts, setToasts] = useState<Toast[]>([]);
+  const [showFilters, setShowFilters] = useState(false);
 
   const showToast = (type: Toast['type'], message: string, duration = 5000) => {
-    const id = Math.random().toString(36).substr(2, 9);
+    const id = Math.random().toString(36).substring(2, 9);
     const toast: Toast = { id, type, message, duration };
 
     setToasts(prev => [...prev, toast]);
@@ -33,10 +35,22 @@ const DiscoverPage: React.FC = () => {
       }, duration);
     }
   };
+  
+
 
   const dismissToast = (id: string) => {
     setToasts(prev => prev.filter(t => t.id !== id));
   };
+
+  const [filters, setFilters] = useState<FilterOptions>({
+    search: '',
+    priceRange: [],
+    rating: 0,
+    cocktailTypes: [],
+    atmosphere: [],
+    isOpen: false,
+    location: null,
+  });
 
   useEffect(() => {
     const loadBars = async () => {
@@ -61,27 +75,58 @@ const DiscoverPage: React.FC = () => {
     loadBars();
   }, [dispatch]);
 
-  const handleSearch = () => {
-    if (!searchQuery.trim()) {
-      dispatch({ type: 'SET_FILTERED_BARS', payload: state.bars });
-      return;
-    }
-
-    const lowercaseQuery = searchQuery.toLowerCase();
-    const filteredBars = state.bars.filter(bar =>
-      bar.name.toLowerCase().includes(lowercaseQuery) ||
-      bar.address.toLowerCase().includes(lowercaseQuery) ||
-      bar.neighborhood.toLowerCase().includes(lowercaseQuery) ||
-      bar.tags.cocktails.some(cocktail => cocktail.toLowerCase().includes(lowercaseQuery)) ||
-      bar.tags.atmosphere.some(atmosphere => atmosphere.toLowerCase().includes(lowercaseQuery))
-    );
-
-    dispatch({ type: 'SET_FILTERED_BARS', payload: filteredBars });
-  };
-
   const toggleFavorite = (barId: string) => {
     dispatch({ type: 'TOGGLE_FAVORITE', payload: barId });
   };
+
+  const applyFilters = () => {
+    const q = (filters.search || '').toLowerCase();
+
+    const filtered = state.bars.filter((bar) => {
+      // 关键词：名字 / 地址 / 商圈 / 标签
+      const passSearch =
+        !q ||
+        bar.name.toLowerCase().includes(q) ||
+        bar.address.toLowerCase().includes(q) ||
+        bar.neighborhood.toLowerCase().includes(q) ||
+        bar.tags.cocktails.some(c => c.toLowerCase().includes(q)) ||
+        bar.tags.atmosphere.some(a => a.toLowerCase().includes(q));
+
+      // 价格：你的数据是 priceLevel = 1..4
+      const passPrice =
+        !filters.priceRange.length || filters.priceRange.includes(bar.priceLevel);
+
+      // 评分：bar.rating
+      const passRating = !filters.rating || (bar.rating || 0) >= filters.rating;
+
+      // 鸡尾酒类型（任意命中即可）
+      const passCocktail =
+        !filters.cocktailTypes.length ||
+        filters.cocktailTypes.some(t =>
+          bar.tags.cocktails.includes(t)
+        );
+
+      // 氛围（任意命中即可）
+      const passAtmosphere =
+        !filters.atmosphere.length ||
+        filters.atmosphere.some(a =>
+          bar.tags.atmosphere.includes(a)
+        );
+
+      // 营业中
+      const passOpen = !filters.isOpen || isOpenNow(bar);
+
+      return passSearch && passPrice && passRating && passCocktail && passAtmosphere && passOpen;
+    });
+
+    dispatch({ type: 'SET_FILTERED_BARS', payload: filtered });
+  };
+
+  // 当 filters 或 bars 变化时，自动应用筛选
+  useEffect(() => {
+    applyFilters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filters, state.bars]);
 
   const formatPriceRange = (level: number) => {
     return '$'.repeat(level);
@@ -139,7 +184,7 @@ const DiscoverPage: React.FC = () => {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* Search */}
+        {/* 顶部筛选 UI */}
         <div className="mb-8">
           <div className="flex gap-4">
             <div className="flex-1 relative">
@@ -147,22 +192,39 @@ const DiscoverPage: React.FC = () => {
               <input
                 type="text"
                 placeholder="Search bars, cocktails, atmosphere..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                value={filters.search}
+                onChange={(e) => setFilters({ ...filters, search: e.target.value })}
                 className="w-full pl-12 pr-4 py-3 bg-paper-surface border-2 border-ink/20 text-ink placeholder-ink-lighter font-medium tracking-wide transition-all duration-300 focus:border-gold focus:shadow-subtle"
                 style={{ borderRadius: '2px' }}
               />
             </div>
-            <button
-              onClick={handleSearch}
-              className="btn-editorial"
-            >
-              Search
-            </button>
-            <button className="btn-secondary p-3">
-              <Filter className="h-5 w-5" />
-            </button>
+            <button onClick={applyFilters} className="btn-editorial">Search</button>
+              <button
+                className="btn-secondary p-3"
+                onClick={() => setShowFilters(v => !v)}   // ← 点击切换展开/收起
+                aria-expanded={showFilters}
+                aria-controls="filters-panel"
+                title="Filters"
+              >
+                <Filter className="h-5 w-5" />
+              </button>
+
+            
+          </div>
+
+            <div
+            id="filters-panel"
+            className={`overflow-hidden transition-all duration-300 ${
+              showFilters ? 'max-h-[2000px] opacity-100 mt-3' : 'max-h-0 opacity-0'
+            }`}
+          >
+            {/* 这里不要再放“顶部搜索栏”！只放筛选项 */}
+            <div className="mt-4">
+              <SearchAndFilter
+                filters={filters}
+                onFiltersChange={setFilters}
+              />
+            </div>
           </div>
         </div>
 
